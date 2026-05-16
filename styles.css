@@ -874,6 +874,10 @@ html[data-theme="light"] .theme-toggle__icon--moon {
   font-size: 0.95rem;
 }
 
+.catalog__status[hidden] {
+  display: none;
+}
+
 .spinner {
   width: 22px;
   height: 22px;
