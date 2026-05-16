@@ -1,0 +1,12 @@
+# Локальная конфигурация с API-ключом — не коммитим
+config.local.js
+.env
+
+# Системные / редакторские файлы
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+node_modules/

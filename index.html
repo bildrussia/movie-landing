@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CinemaWave — современный киносайт с афишей, рейтингами и трейлерами." />
+  <title>CinemaWave — лучшие фильмы в одном месте</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎬%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к контенту</a>
+
+  <!-- ШАПКА -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="CinemaWave — на главную">
+        <span class="logo__icon" aria-hidden="true">🎬</span>
+        <span class="logo__text">Cinema<span class="logo__accent">Wave</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a href="#features" class="nav__link">О сайте</a></li>
+          <li><a href="#catalog" class="nav__link">Афиша</a></li>
+          <li><a href="#reviews" class="nav__link">Отзывы</a></li>
+          <li><a href="#contact" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Переключить тему"
+          title="Переключить тему"
+        >
+          <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀️</span>
+          <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">🌙</span>
+        </button>
+        <a href="#contact" class="btn btn--primary btn--sm">Связаться</a>
+        <button
+          type="button"
+          class="burger"
+          id="burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Мобильное меню">
+      <ul>
+        <li><a href="#features">О сайте</a></li>
+        <li><a href="#catalog">Афиша</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge">🍿 Новый сезон уже здесь</span>
+          <h1 class="hero__title">
+            Кино, которое <span class="gradient-text">меняет реальность</span>
+          </h1>
+          <p class="hero__subtitle">
+            Афиша новинок, классика жанра, трейлеры и честные рецензии — всё в одном
+            месте. Подбери фильм под настроение за пару кликов.
+          </p>
+          <div class="hero__cta">
+            <a href="#catalog" class="btn btn--primary btn--lg">Смотреть афишу</a>
+            <a href="#features" class="btn btn--ghost btn--lg">Подробнее ↓</a>
+          </div>
+          <ul class="hero__stats" aria-label="Статистика сайта">
+            <li><strong>10K+</strong><span>фильмов</span></li>
+            <li><strong>4.9</strong><span>средний рейтинг</span></li>
+            <li><strong>120K</strong><span>зрителей</span></li>
+          </ul>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <div class="poster poster--1"></div>
+          <div class="poster poster--2"></div>
+          <div class="poster poster--3"></div>
+          <div class="floating-emoji floating-emoji--1">🎞️</div>
+          <div class="floating-emoji floating-emoji--2">⭐</div>
+          <div class="floating-emoji floating-emoji--3">🎥</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="features section" id="features">
+      <div class="container">
+        <header class="section__header">
+          <span class="eyebrow">Почему CinemaWave</span>
+          <h2 class="section__title">Всё, что нужно киноману</h2>
+          <p class="section__lead">
+            Удобный каталог, быстрый поиск, рейтинги от зрителей и трейлеры в HD.
+          </p>
+        </header>
+
+        <ul class="features__grid">
+          <li class="feature-card">
+            <div class="feature-card__icon">🎯</div>
+            <h3>Точные подборки</h3>
+            <p>Фильтры по жанрам, настроению и году выпуска — найдёшь идеальный фильм.</p>
+          </li>
+          <li class="feature-card">
+            <div class="feature-card__icon">⭐</div>
+            <h3>Честные рейтинги</h3>
+            <p>Оценки и отзывы реальных зрителей без накруток и платного продвижения.</p>
+          </li>
+          <li class="feature-card">
+            <div class="feature-card__icon">🎬</div>
+            <h3>Трейлеры в HD</h3>
+            <p>Смотри превью прямо на сайте — без лишних переходов и рекламы.</p>
+          </li>
+          <li class="feature-card">
+            <div class="feature-card__icon">📱</div>
+            <h3>Адаптивный дизайн</h3>
+            <p>Удобно смотреть с телефона, планшета или большого монитора.</p>
+          </li>
+          <li class="feature-card">
+            <div class="feature-card__icon">🌗</div>
+            <h3>Светлая и тёмная тема</h3>
+            <p>Выбирай комфортный режим — настройки сохраняются между визитами.</p>
+          </li>
+          <li class="feature-card">
+            <div class="feature-card__icon">⚡</div>
+            <h3>Быстрая загрузка</h3>
+            <p>Чистый HTML/CSS/JS без тяжёлых фреймворков — мгновенный отклик.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- КАТАЛОГ ФИЛЬМОВ -->
+    <section class="catalog section" id="catalog">
+      <div class="container">
+        <header class="section__header">
+          <span class="eyebrow">Афиша</span>
+          <h2 class="section__title">Топ фильмов недели</h2>
+          <p class="section__lead">
+            Свежие премьеры и классика — выбирай и смотри.
+          </p>
+        </header>
+
+        <div class="filters" role="tablist" aria-label="Фильтр по жанрам">
+          <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">Все</button>
+          <button class="filter" data-filter="action" role="tab" aria-selected="false">Боевик</button>
+          <button class="filter" data-filter="drama" role="tab" aria-selected="false">Драма</button>
+          <button class="filter" data-filter="sci-fi" role="tab" aria-selected="false">Фантастика</button>
+          <button class="filter" data-filter="comedy" role="tab" aria-selected="false">Комедия</button>
+          <button class="filter" data-filter="thriller" role="tab" aria-selected="false">Триллер</button>
+        </div>
+
+        <div class="catalog__status" id="catalogStatus" hidden>
+          <div class="spinner" aria-hidden="true"></div>
+          <span>Загружаем свежую афишу с Кинопоиска…</span>
+        </div>
+
+        <ul class="movies" id="moviesGrid" aria-live="polite"></ul>
+
+        <div class="catalog__actions">
+          <button type="button" class="btn btn--primary btn--lg" id="loadMore">
+            Показать ещё
+          </button>
+          <p class="catalog__hint" id="catalogHint">Показано <span id="shownCount">0</span> из <span id="totalCount">0</span></p>
+          <p class="catalog__source" id="catalogSource"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОТЗЫВЫ -->
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <header class="section__header">
+          <span class="eyebrow">Отзывы</span>
+          <h2 class="section__title">Что говорят зрители</h2>
+        </header>
+
+        <ul class="reviews__grid">
+          <li class="review-card">
+            <div class="review-card__rating" aria-label="Рейтинг 5 из 5">★★★★★</div>
+            <p>«Невероятная подборка! Нашёл здесь фильмы, о которых даже не слышал. Интерфейс — огонь.»</p>
+            <footer>
+              <div class="avatar" aria-hidden="true">АК</div>
+              <div>
+                <strong>Анна К.</strong>
+                <span>Москва</span>
+              </div>
+            </footer>
+          </li>
+          <li class="review-card">
+            <div class="review-card__rating" aria-label="Рейтинг 5 из 5">★★★★★</div>
+            <p>«Тёмная тема — спасение глаз вечером. Сайт открывается мгновенно даже на старом ноуте.»</p>
+            <footer>
+              <div class="avatar" aria-hidden="true">ДВ</div>
+              <div>
+                <strong>Дмитрий В.</strong>
+                <span>Санкт-Петербург</span>
+              </div>
+            </footer>
+          </li>
+          <li class="review-card">
+            <div class="review-card__rating" aria-label="Рейтинг 4 из 5">★★★★☆</div>
+            <p>«Удобные фильтры по жанрам, рейтинги без накруток. Регулярно захожу за новинками.»</p>
+            <footer>
+              <div class="avatar" aria-hidden="true">МС</div>
+              <div>
+                <strong>Мария С.</strong>
+                <span>Казань</span>
+              </div>
+            </footer>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
+    <section class="contact section" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__info">
+          <span class="eyebrow">Связь с нами</span>
+          <h2 class="section__title">Напиши нам</h2>
+          <p class="section__lead">
+            Есть вопрос, идея или хочешь предложить фильм для подборки? Заполни форму —
+            ответим в течение суток.
+          </p>
+
+          <ul class="contact__list">
+            <li>
+              <span class="contact__icon" aria-hidden="true">📧</span>
+              <a href="mailto:hello@cinemawave.ru">hello@cinemawave.ru</a>
+            </li>
+            <li>
+              <span class="contact__icon" aria-hidden="true">📞</span>
+              <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            </li>
+            <li>
+              <span class="contact__icon" aria-hidden="true">📍</span>
+              <span>Москва, ул. Кинолюбителей, 1</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__row">
+            <label class="form__field">
+              <span class="form__label">Имя</span>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Иван"
+                required
+                minlength="2"
+                autocomplete="name"
+              />
+              <small class="form__error" data-error-for="name"></small>
+            </label>
+            <label class="form__field">
+              <span class="form__label">Email</span>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="ivan@example.com"
+                required
+                autocomplete="email"
+              />
+              <small class="form__error" data-error-for="email"></small>
+            </label>
+          </div>
+
+          <label class="form__field">
+            <span class="form__label">Телефон <span class="form__optional">(необязательно)</span></span>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="+7 (999) 000-00-00"
+              autocomplete="tel"
+            />
+            <small class="form__error" data-error-for="phone"></small>
+          </label>
+
+          <label class="form__field">
+            <span class="form__label">Сообщение</span>
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              placeholder="Расскажи, чем мы можем помочь…"
+              required
+              minlength="10"
+            ></textarea>
+            <small class="form__error" data-error-for="message"></small>
+          </label>
+
+          <label class="form__check">
+            <input type="checkbox" name="consent" id="consent" required />
+            <span>Согласен(на) с обработкой персональных данных</span>
+          </label>
+          <small class="form__error" data-error-for="consent"></small>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--block">
+            Отправить сообщение
+          </button>
+
+          <p class="form__success" id="formSuccess" hidden>
+            ✅ Сообщение отправлено! Мы свяжемся с тобой в ближайшее время.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--brand">
+        <a href="#top" class="logo">
+          <span class="logo__icon" aria-hidden="true">🎬</span>
+          <span class="logo__text">Cinema<span class="logo__accent">Wave</span></span>
+        </a>
+        <p>Лучшие фильмы — в одном месте. Сайт создан как итоговый проект по HTML, CSS и JavaScript.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="#features">О сайте</a></li>
+          <li><a href="#catalog">Афиша</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Соцсети</h4>
+        <ul class="socials">
+          <li><a href="#" aria-label="Telegram">✈️ Telegram</a></li>
+          <li><a href="#" aria-label="VK">🅥 VK</a></li>
+          <li><a href="#" aria-label="YouTube">▶ YouTube</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="mailto:hello@cinemawave.ru">hello@cinemawave.ru</a></li>
+          <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+          <li>Москва, ул. Кинолюбителей, 1</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> CinemaWave. Все права защищены.</p>
+      <p>Сделано с ❤️ как итоговый проект.</p>
+    </div>
+  </footer>
+
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
